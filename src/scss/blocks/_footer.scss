@@ -1,0 +1,54 @@
+.footer {
+    height: 400px;
+    background-color: #b7d9dd;
+    &____contacts {
+        color: white;
+        font-family: 'Raleway';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        & a:focus {
+            outline: none;
+        }
+    }
+}
+.row--back {
+    padding-top: 125px;
+}
+.contacts {
+    &__img {
+        padding-right: 15px;
+    }
+    &__phone {
+        padding-left: 45px;
+    }
+}
+.social__cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 25px 5px;
+    color: white;
+    font-size: 50px;
+    & a:focus, & a:active {
+        outline: none;
+    }
+}
+.cards__back {
+    display: none;
+}
+.cards:hover .cards__front {
+    display: none;
+}
+.cards:hover .cards__back {
+    display: block;
+    transition: 0.5s;
+}
+.copyright {
+    color: white;
+	font-family: 'Raleway';
+	font-size: 18px;
+	font-weight: 700;
+    padding-top: 55px;
+    text-align: center;
+}

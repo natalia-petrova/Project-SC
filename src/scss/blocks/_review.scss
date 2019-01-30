@@ -1,0 +1,29 @@
+.review {
+    height: 510px;
+    background-color: #eac3cf;
+    &__main {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: space-between;
+        color: #474747;
+        font-family: 'Raleway';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    &__header {
+        text-align: center;
+        color: #303030;
+        font-family: 'Pacifico';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 29px;
+        padding-top: 60px;
+    }
+    &__img {
+        padding-top: 30px;
+    }
+}
+.slide .review {
+    display: flex;
+}

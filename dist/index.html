@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweet Cake</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700&amp;subset=cyrillic">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./plugins/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="slider__auto">
+        <div class="slide"><img src="./img/header_back_01.png" alt=""></div>
+        <div class="slide"><img src="./img/header_back_02.png" alt=""></div>
+        <div class="slide"><img src="./img/header_back_03.png" alt=""></div>
+        <div class="slide"><img src="./img/header_back_04.png" alt=""></div>
+      </div>
+      <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+      <div class="container">
+        <div class="header__headline">
+          <div class="header__logo"><a class="header__logo--main" href="javascript:void(0)"><img src="./img/logo_sweet_cake.png" alt=""></a></div>
+          <nav class="header__nav">
+            <ul class="nav__list" id="myTopnav">
+              <li class="nav__item"><a class="nav__link" href="index.html#top1">О нас</a></li>
+              <li class="nav__item"><img class="nav__img" src="./img/header_ellipse.png" alt=""></li>
+              <li class="nav__item"><a class="nav__link" href="index.html#top2">Ассортимент</a></li>
+              <li class="nav__item"><img class="nav__img" src="./img/header_ellipse.png" alt=""></li>
+              <li class="nav__item"><a class="nav__link" href="index.html#top3">Галерея</a></li>
+              <li class="nav__item"><img class="nav__img" src="./img/header_ellipse.png" alt=""></li>
+              <li class="nav__item"><a class="nav__link" href="index.html#top4">Отзывы</a></li>
+              <li class="nav__item"><img class="nav__img" src="./img/header_ellipse.png" alt=""></li>
+              <li class="nav__item"><a class="nav__link" href="index.html#top5">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__menu"><a class="menu__icon" href="javascript:void(0)" onclick="myFunction()"><i class="fas fa-bars"></i></a></div>
+        </div>
+        <div class="header__text">
+          <h1>Блаженство</h1>
+          <h2>вкуса тает во рту</h2>
+          <h3>Мы сделаем ваш праздник незабываемым <br/> и исполним любые пожелания</h3>
+          <button class="btn__header" name="submit"><a href="index.html#top6">Хочу десерт</a></button>
+        </div>
+      </div>
+    </header>
+    <div class="about">
+      <div class="container"><a name="top1"></a>
+        <div class="about__header">
+          <p>Почему нас выбирают</p>
+        </div>
+        <div class="row row--about">
+          <div class="col col-4"><img class="icon--about" src="./img/icon_02_01.png" alt="">
+            <p>Мы используем только свежие натуральные ингредиенты</p>
+          </div>
+          <div class="col col-4"><img class="icon--about" src="./img/icon_02_02.png" alt="">
+            <p>Не храним готовый продукт больше суток</p>
+          </div>
+          <div class="col col-4"><img class="icon--about" src="./img/icon_02_03.png" alt="">
+            <p>Готовим эксклюзивные десерты по вашим пожеланиям</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio">
+      <div class="container"><a name="top2"></a>
+        <p class="portfolio__header">Наш Ассортимент</p>
+        <nav class="portfolio__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="filter__link" href="javascript:void(0)" id="all">Все</a></li>
+            <li class="nav__item"><a class="filter__link" href="javascript:void(0)" id="cakes">Торты</a></li>
+            <li class="nav__item"><img class="nav__img" src="./img/header_ellipse.png" alt=""></li>
+            <li class="nav__item"><a class="filter__link" href="javascript:void(0)" id="cupcakes">Капкейки</a></li>
+            <li class="nav__item"><img class="nav__img" src="./img/header_ellipse.png" alt=""></li>
+            <li class="nav__item"><a class="filter__link" href="javascript:void(0)" id="cookies">Печенье</a></li>
+          </ul>
+        </nav>
+        <div class="portfolio__gallery">
+          <div class="row">
+            <div class="col col-4">
+              <div class="cakes item">
+                <div class="portfolio__image"><img src="./img/cake_01.png" alt="Cake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Открытый трехярусный торт с сезонными цветами</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальный вес <span class="portfolio__type--bold">2,5 кг</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">150 грн/кг</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cakes item">
+                <div class="portfolio__image"><img src="./img/cake_02.png" alt="Cake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Свадебный торт с фруктовой начинкой и нежным кремом</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальный вес <span class="portfolio__type--bold">1,5 кг</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">100 грн/кг</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cakes item">
+                <div class="portfolio__image"><img src="./img/cake_03.png" alt="Cake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Фруктовый торт, украшенный сахарными фигурками</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальный вес <span class="portfolio__type--bold">1 кг</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">100 грн/кг</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-4">
+              <div class="cakes item">
+                <div class="portfolio__image"><img src="./img/cake_04.png" alt="Cake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Кремовый свадебный торт в эко-стиле</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальный вес <span class="portfolio__type--bold">1,5 кг</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">100 грн/кг</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cakes item">
+                <div class="portfolio__image"><img src="./img/cake_05.png" alt="Cake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Нежный свадебный торт, украшенный цветами</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальный вес <span class="portfolio__type--bold">2,5 кг</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">150 грн/кг</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cakes item">
+                <div class="portfolio__image"><img src="./img/cake_06.png" alt="Cake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Двухярусный торт с живыми цветами</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальный вес <span class="portfolio__type--bold">2 кг</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">150 грн/кг</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-4">
+              <div class="cupcakes item">
+                <div class="portfolio__image"><img src="./img/cupcake_01.png" alt="Cupcake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Фруктовые капкейки, украшенные сладостям</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">25 грн/шт</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cupcakes item">
+                <div class="portfolio__image"><img src="./img/cupcake_02.png" alt="Cupcake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Воздушные капкейки, украшенные кремом и мини-макарон</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">30 грн/шт</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cupcakes item">
+                <div class="portfolio__image"><img src="./img/cupcake_03.png" alt="Cupcake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Шоколадные капкейки со сливочным кремом</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">35 грн/шт</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-4">
+              <div class="cupcakes item">
+                <div class="portfolio__image"><img src="./img/cupcake_04.png" alt="Cupcake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Морковно-ореховые капкейки с нежным кремом</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">30 грн/шт</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cupcakes item">
+                <div class="portfolio__image"><img src="./img/cupcake_05.png" alt="Cupcake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Ванильные капкейки со сливочнным сыром</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">25 грн/шт</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cupcakes item">
+                <div class="portfolio__image"><img src="./img/cupcake_06.png" alt="Cupcake">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Нежные капкейки, украшенные  безе и сахарными розами</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">45 грн/шт</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-4">
+              <div class="cookies item">
+                <div class="portfolio__image"><img src="./img/cookie_01.png" alt="Cookie">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Песочно-медовое печенье, украшеное росписью</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">15 грн/шт</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cookies item">
+                <div class="portfolio__image"><img src="./img/cookie_02.png" alt="Cookie">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Имбирное печенье в виде зверей</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">20 грн/шт</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cookies item">
+                <div class="portfolio__image"><img src="./img/cookie_03.png" alt="Cookie">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Ванильное печенье, расписанное глазурью</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">25 грн/шт</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-4">
+              <div class="cookies item">
+                <div class="portfolio__image"><img src="./img/cookie_04.png" alt="Cookie">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Нежные ореховые пряники, украшенные мастикой</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">20 грн/шт</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cookies item">
+                <div class="portfolio__image"><img src="./img/cookie_05.png" alt="Cookie">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Миндальный макарон с ванильной начинкой</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">15 грн/шт</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-4">
+              <div class="cookies item">
+                <div class="portfolio__image"><img src="./img/cookie_06.png" alt="Cookie">
+                  <div class="portfolio__overlay">
+                    <div class="portfolio__text">
+                      <p>Нежное расписное печенье для важных событий</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio__type">
+                  <p class="type__info">Минимальное количество <span class="portfolio__type--bold">6 шт.</p>
+                  <p class="type__info">Цена <span class="portfolio__type--bold">10 грн/шт</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="work">
+      <div class="container">
+        <div class="work__header">
+          <p>Как мы работаем</p>
+        </div>
+        <div class="work__main">
+          <div class="row">
+            <div class="col col-3">
+              <div class="work__numbers"><img src="./img/number_01.png" alt="">
+                <p class="work__bald">Оформление заказа</p>
+                <p class="work__stage">Принимаем ваш заказ и перезваниваем для уточнения всех деталей.</p>
+              </div>
+            </div>
+            <div class="col col-3">
+              <div class="work__numbers"><img src="./img/number_02.png" alt="">
+                <p class="work__bald">Осуществление идеи</p>
+                <p class="work__stage">Приступаем к приготовлению выбранного вами торта, учитывая все пожелания.</p>
+              </div>
+            </div>
+            <div class="col col-3">
+              <div class="work__numbers"><img src="./img/number_03.png" alt="">
+                <p class="work__bald">Подготовка отправки</p>
+                <p class="work__stage">Упаковываем готовый дессерт в коробку и готовим заказ к отправке получателю.</p>
+              </div>
+            </div>
+            <div class="col col-3">
+              <div class="work__numbers"><img src="./img/number_04.png" alt="">
+                <p class="work__bald">Получение десерта</p>
+                <p class="work__stage">Заказ готов ко встрече с получателем и будет доставлен в указанное время.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="container"><a name="top3"></a>
+        <div class="gallery__header">
+          <p>Наши Работы</p>
+        </div>
+        <div class="gallery__main">
+          <div class="slider">
+            <div class="slide">
+              <div class="row">
+                <div class="col col-6"><img class="gallery__slide" src="./img/gallery_01_01.png" alt=""></div>
+                <div class="col col-3"><img class="gallery__img" src="./img/gallery_01_02.png" alt=""><img src="./img/gallery_01_04.png" alt=""></div>
+                <div class="col col-3"><img class="gallery__img" src="./img/gallery_01_03.png" alt=""><img src="./img/gallery_01_05.png" alt=""></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="row">
+                <div class="col col-6"><img class="gallery__slide" src="./img/gallery_02_01.png" alt=""></div>
+                <div class="col col-3"><img class="gallery__img" src="./img/gallery_02_02.png" alt=""><img src="./img/gallery_02_04.png" alt=""></div>
+                <div class="col col-3"><img class="gallery__img" src="./img/gallery_02_03.png" alt=""><img src="./img/gallery_02_05.png" alt=""></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="row">
+                <div class="col col-6"><img class="gallery__slide" src="./img/gallery_03_01.png" alt=""></div>
+                <div class="col col-3"><img class="gallery__img" src="./img/gallery_03_02.png" alt=""><img src="./img/gallery_03_04.png" alt=""></div>
+                <div class="col col-3"><img class="gallery__img" src="./img/gallery_03_03.png" alt=""><img src="./img/gallery_03_05.png" alt=""></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="row">
+                <div class="col col-6"><img class="gallery__slide" src="./img/gallery_04_01.png" alt=""></div>
+                <div class="col col-3"><img class="gallery__img" src="./img/gallery_04_02.png" alt=""><img src="./img/gallery_04_04.png" alt=""></div>
+                <div class="col col-3"><img class="gallery__img" src="./img/gallery_04_03.png" alt=""><img src="./img/gallery_04_05.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="container"><a name="top4"></a>
+        <div class="review__header">
+          <p>Отзывы</p>
+        </div>
+        <div class="review__main">
+          <div class="row">
+            <div class="col col-2"><img class="quote__img" src="./img/quotation_left.png" alt=""></div>
+            <div class="col col-8">
+              <div class="slider">
+                <div class="slide">
+                  <div class="row">
+                    <div class="col col-3"><img class="review__img" src="./img/review_01.png" alt=""></div>
+                    <div class="col col-9">
+                      <p>Заказывали торт на день рождения ребенку по собственному эскизу с персонажами любимых героев. Он был великолепен! Спасибо! <br><br>Светлана, Киев</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="row">
+                    <div class="col col-3"><img class="review__img" src="./img/review_02.png" alt=""></div>
+                    <div class="col col-9">
+                      <p>Спасибо за красивый торт "Белоснежный зайка" с вкуснющей трехслойной начинкой. Наша дочка была в восторге. <br><br>Марина, Харьков</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="row">
+                    <div class="col col-3"><img class="review__img" src="./img/review_03.png" alt=""></div>
+                    <div class="col col-9">
+                      <p>Заказывали торт на свадьбу. Он превзошел все ожидания! Все гости были в восторге. Будем заказывать только у вас) <br><br>Ирина, Николаев</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="row">
+                    <div class="col col-3"><img class="review__img" src="./img/review_04.png" alt=""></div>
+                    <div class="col col-9">
+                      <p>Огромное спасибо за тортики. Это не только красота внешняя, но и вкуснятина неописуемая! Теперь мы ваши постоянные клиенты. Спасибо!!! <br><br>Елена, Николаев</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-2"><img class="quote__img" src="./img/quotation_right.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order"><a name="top6"></a>
+      <div class="container">
+        <div class="col col-7 offset-5 order--form">
+          <p class="order__header">Закажите свой идеальный десерт</p>
+          <p class="order__text">Оставьте свои контактные данные и мы перезвоним вам в ближайшее время, чтобы ответить на все вопросы</p>
+          <form action="#" method="get">
+            <label for="">
+              <input class="order__name" type="text" name="user" placeholder="Ваше имя" required minlength="5" maxlength="20">
+            </label>
+            <label for="">
+              <input class="order__tel" type="digit" name="tel" placeholder="Ваш номер телефона" required pattern="[0-9]{10,18}">
+            </label>
+            <button class="btn__header" name="submit" value="send">Хочу десерт</button>
+          </form>
+        </div>
+        <div class="col order--320">
+          <p class="order__header">Закажите свой идеальный десерт</p>
+          <p class="order__text">Оставьте свои контактные данные и мы перезвоним вам в ближайшее время, чтобы ответить на все вопросы</p>
+          <form action="#" method="get">
+            <label for="">
+              <input class="order__name" type="text" name="user" placeholder="Ваше имя" required minlength="5" maxlength="20">
+            </label>
+            <label for="">
+              <input class="order__tel" type="digit" name="tel" placeholder="Ваш номер телефона" required pattern="[0-9]{10,18}">
+            </label>
+            <button class="btn__header" name="submit" value="send">Хочу десерт</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container"><a name="top5"></a>
+        <div class="row row--back">
+          <div class="col col-2"><a class="footer__logo--main" href="javascript:void(0)"><img class="logo__cake" src="./img/logo_sweet_cake.png" alt=""></a></div>
+          <div class="col col-3"> 
+            <div class="footer__contacts"><br> График работы: <br>Вт-Вс: 9:00 - 18:00 <br>Пн - выходной</div>
+          </div>
+          <div class="col col-4">
+            <div class="footer__contacts"><br><img class="contacts__img" src="./img/icon_phone.png" alt=""><a href="tel:+38093471537">+38093471537</a><br><span class="contacts__phone"></span><a href="tel:+38050371547">+38050371547</a><br><img class="contacts__img" src="./img/icon_mail.png" alt=""><a href="mailto:Sweetcake@gmail.com">Sweetcake@gmail.com</a></div>
+          </div>
+          <div class="col col-3">
+            <div class="social__cards">
+              <div class="row">
+                <div class="col col-4 offset-1">
+                  <div class="cards">
+                    <div class="cards__front"><a href="javascript:void(0)"><img class="instagram" src="./img/icon_instagram.png" alt=""></a></div>
+                    <div class="cards__back"><a href="javascript:void(0)"><img class="instagram" src="./img/icon_ig_hover.png" alt=""></a></div>
+                  </div>
+                </div>
+                <div class="col col-3">
+                  <div class="cards">
+                    <div class="cards__front"><a href="javascript:void(0)"><img src="./img/icon_facebook.png" alt=""></a></div>
+                    <div class="cards__back"><a href="javascript:void(0)"><img src="./img/icon_fb_hover.png" alt=""></a></div>
+                  </div>
+                </div>
+                <div class="col col-4">
+                  <div class="cards">
+                    <div class="cards__front"><a href="javascript:void(0)"><img src="./img/icon_twitter.png" alt=""></a></div>
+                    <div class="cards__back"><a href="javascript:void(0)"><img src="./img/icon_twitter_hover.png" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Sweet Cake дизайн 2018. Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./plugins/slick/slick.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/slickslider.js"></script>
+    <script src="./js/topBtn.js"></script>
+    <script src="./js/filter.js"></script>
+  </body>
+</html>

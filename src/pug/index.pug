@@ -1,0 +1,369 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Sweet Cake
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700&amp;subset=cyrillic">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		link(rel="stylesheet", type="text/css", href="./plugins/slick/slick.css")
+		link(rel="stylesheet", type="text/css", href="./plugins/slick/slick-theme.css")
+		link(rel="stylesheet", href="./fonts/fonts.css")
+		link(rel="stylesheet", href="./css/style.css")
+	body
+		header.header 
+			.slider__auto
+				.slide: img(src="./img/header_back_01.png", alt="")
+				.slide: img(src="./img/header_back_02.png", alt="")
+				.slide: img(src="./img/header_back_03.png", alt="")
+				.slide: img(src="./img/header_back_04.png", alt="")
+			button(onclick="topFunction()" id="topBtn" title="Go to top")
+				i.fas.fa-arrow-up
+			.container
+				.header__headline
+					.header__logo
+						a(href="javascript:void(0)").header__logo--main
+							img(src="./img/logo_sweet_cake.png", alt="")
+					nav.header__nav
+						ul.nav__list#myTopnav
+							li.nav__item: a(href="index.html#top1").nav__link О нас
+							li.nav__item: img(src="./img/header_ellipse.png", alt="", class="nav__img")
+							li.nav__item: a(href="index.html#top2").nav__link Ассортимент
+							li.nav__item: img(src="./img/header_ellipse.png", alt="", class="nav__img")
+							li.nav__item: a(href="index.html#top3").nav__link Галерея
+							li.nav__item: img(src="./img/header_ellipse.png", alt="", class="nav__img")
+							li.nav__item: a(href="index.html#top4").nav__link Отзывы
+							li.nav__item: img(src="./img/header_ellipse.png", alt="", class="nav__img")
+							li.nav__item: a(href="index.html#top5").nav__link Контакты
+					.header__menu
+						a(href="javascript:void(0)", class="menu__icon", onclick="myFunction()")
+							i.fas.fa-bars
+				.header__text
+					h1 Блаженство
+					h2 вкуса тает во рту
+					h3 Мы сделаем ваш праздник незабываемым <br/> и исполним любые пожелания
+					button(class="btn__header", name="submit"): a(href="index.html#top6") Хочу десерт
+		.about
+			.container #[a(name="top1")]
+				.about__header: p Почему нас выбирают
+				.row.row--about
+					.col.col-4
+						img(src="./img/icon_02_01.png", alt="", class="icon--about")
+						p Мы используем только свежие натуральные ингредиенты
+					.col.col-4
+						img(src="./img/icon_02_02.png", alt="", class="icon--about")
+						p Не храним готовый продукт больше суток
+					.col.col-4
+						img(src="./img/icon_02_03.png", alt="", class="icon--about")
+						p Готовим эксклюзивные десерты по вашим пожеланиям
+		.portfolio
+			.container #[a(name="top2")]
+				p.portfolio__header Наш Ассортимент
+				nav.portfolio__nav
+					ul.nav__list
+						li.nav__item: a(href="javascript:void(0)", class="filter__link", id="all") Все
+						li.nav__item: a(href="javascript:void(0)", class="filter__link", id="cakes") Торты
+						li.nav__item: img(src="./img/header_ellipse.png", alt="", class="nav__img")
+						li.nav__item: a(href="javascript:void(0)", class="filter__link", id="cupcakes") Капкейки
+						li.nav__item: img(src="./img/header_ellipse.png", alt="", class="nav__img")
+						li.nav__item: a(href="javascript:void(0)", class="filter__link", id="cookies") Печенье
+				.portfolio__gallery
+					.row
+						.col.col-4
+							.cakes.item
+								.portfolio__image
+									img(src="./img/cake_01.png", alt="Cake")
+									.portfolio__overlay: .portfolio__text: p Открытый трехярусный торт с сезонными цветами
+								.portfolio__type
+									p.type__info Минимальный вес <span class="portfolio__type--bold">2,5 кг
+									p.type__info Цена <span class="portfolio__type--bold">150 грн/кг
+						.col.col-4
+							.cakes.item
+								.portfolio__image
+									img(src="./img/cake_02.png", alt="Cake")
+									.portfolio__overlay: .portfolio__text: p Свадебный торт с фруктовой начинкой и нежным кремом
+								.portfolio__type
+									p.type__info Минимальный вес <span class="portfolio__type--bold">1,5 кг
+									p.type__info Цена <span class="portfolio__type--bold">100 грн/кг
+						.col.col-4
+							.cakes.item
+								.portfolio__image
+									img(src="./img/cake_03.png", alt="Cake")
+									.portfolio__overlay: .portfolio__text: p Фруктовый торт, украшенный сахарными фигурками
+								.portfolio__type
+									p.type__info Минимальный вес <span class="portfolio__type--bold">1 кг
+									p.type__info Цена <span class="portfolio__type--bold">100 грн/кг
+					.row
+						.col.col-4
+							.cakes.item
+								.portfolio__image
+									img(src="./img/cake_04.png", alt="Cake")
+									.portfolio__overlay: .portfolio__text: p Кремовый свадебный торт в эко-стиле
+								.portfolio__type
+									p.type__info Минимальный вес <span class="portfolio__type--bold">1,5 кг
+									p.type__info Цена <span class="portfolio__type--bold">100 грн/кг
+						.col.col-4
+							.cakes.item
+								.portfolio__image
+									img(src="./img/cake_05.png", alt="Cake")
+									.portfolio__overlay: .portfolio__text: p Нежный свадебный торт, украшенный цветами
+								.portfolio__type
+									p.type__info Минимальный вес <span class="portfolio__type--bold">2,5 кг
+									p.type__info Цена <span class="portfolio__type--bold">150 грн/кг
+						.col.col-4
+							.cakes.item
+								.portfolio__image
+									img(src="./img/cake_06.png", alt="Cake")
+									.portfolio__overlay: .portfolio__text: p Двухярусный торт с живыми цветами
+								.portfolio__type
+									p.type__info Минимальный вес <span class="portfolio__type--bold">2 кг
+									p.type__info Цена <span class="portfolio__type--bold">150 грн/кг
+					.row
+						.col.col-4
+							.cupcakes.item
+								.portfolio__image
+									img(src="./img/cupcake_01.png", alt="Cupcake")
+									.portfolio__overlay: .portfolio__text: p Фруктовые капкейки, украшенные сладостям
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">25 грн/шт
+						.col.col-4
+							.cupcakes.item
+								.portfolio__image
+									img(src="./img/cupcake_02.png", alt="Cupcake")
+									.portfolio__overlay: .portfolio__text: p Воздушные капкейки, украшенные кремом и мини-макарон
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">30 грн/шт
+						.col.col-4
+							.cupcakes.item
+								.portfolio__image
+									img(src="./img/cupcake_03.png", alt="Cupcake")
+									.portfolio__overlay: .portfolio__text: p Шоколадные капкейки со сливочным кремом
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">35 грн/шт
+					.row
+						.col.col-4
+							.cupcakes.item
+								.portfolio__image
+									img(src="./img/cupcake_04.png", alt="Cupcake")
+									.portfolio__overlay: .portfolio__text: p Морковно-ореховые капкейки с нежным кремом
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">30 грн/шт
+						.col.col-4
+							.cupcakes.item
+								.portfolio__image
+									img(src="./img/cupcake_05.png", alt="Cupcake")
+									.portfolio__overlay: .portfolio__text: p Ванильные капкейки со сливочнным сыром
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">25 грн/шт
+						.col.col-4
+							.cupcakes.item
+								.portfolio__image
+									img(src="./img/cupcake_06.png", alt="Cupcake")
+									.portfolio__overlay: .portfolio__text: p Нежные капкейки, украшенные  безе и сахарными розами
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">45 грн/шт
+					.row
+						.col.col-4
+							.cookies.item
+								.portfolio__image
+									img(src="./img/cookie_01.png", alt="Cookie")
+									.portfolio__overlay: .portfolio__text: p Песочно-медовое печенье, украшеное росписью
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">15 грн/шт
+						.col.col-4
+							.cookies.item
+								.portfolio__image
+									img(src="./img/cookie_02.png", alt="Cookie")
+									.portfolio__overlay: .portfolio__text: p Имбирное печенье в виде зверей
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">20 грн/шт
+						.col.col-4
+							.cookies.item
+								.portfolio__image
+									img(src="./img/cookie_03.png", alt="Cookie")
+									.portfolio__overlay: .portfolio__text: p Ванильное печенье, расписанное глазурью
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">25 грн/шт
+					.row
+						.col.col-4
+							.cookies.item
+								.portfolio__image
+									img(src="./img/cookie_04.png", alt="Cookie")
+									.portfolio__overlay: .portfolio__text: p Нежные ореховые пряники, украшенные мастикой
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">20 грн/шт
+						.col.col-4
+							.cookies.item
+								.portfolio__image
+									img(src="./img/cookie_05.png", alt="Cookie")
+									.portfolio__overlay: .portfolio__text: p Миндальный макарон с ванильной начинкой
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">15 грн/шт
+						.col.col-4
+							.cookies.item
+								.portfolio__image
+									img(src="./img/cookie_06.png", alt="Cookie")
+									.portfolio__overlay: .portfolio__text: p Нежное расписное печенье для важных событий
+								.portfolio__type
+									p.type__info Минимальное количество <span class="portfolio__type--bold">6 шт.
+									p.type__info Цена <span class="portfolio__type--bold">10 грн/шт
+		.work
+			.container
+				.work__header: p Как мы работаем
+				.work__main
+					.row
+						.col.col-3
+							.work__numbers
+								img(src="./img/number_01.png", alt="")
+								p.work__bald Оформление заказа
+								p.work__stage Принимаем ваш заказ и перезваниваем для уточнения всех деталей.
+						.col.col-3
+							.work__numbers
+								img(src="./img/number_02.png", alt="")
+								p.work__bald Осуществление идеи
+								p.work__stage Приступаем к приготовлению выбранного вами торта, учитывая все пожелания.
+						.col.col-3
+							.work__numbers
+								img(src="./img/number_03.png", alt="")
+								p.work__bald Подготовка отправки
+								p.work__stage Упаковываем готовый дессерт в коробку и готовим заказ к отправке получателю.
+						.col.col-3
+							.work__numbers
+								img(src="./img/number_04.png", alt="")
+								p.work__bald Получение десерта
+								p.work__stage Заказ готов ко встрече с получателем и будет доставлен в указанное время.
+		.gallery
+			.container #[a(name="top3")]
+				.gallery__header: p Наши Работы
+				.gallery__main
+					.slider
+						.slide
+							.row
+								.col.col-6: img(src="./img/gallery_01_01.png", alt="", class="gallery__slide")
+								.col.col-3
+									img(src="./img/gallery_01_02.png", alt="", class="gallery__img")
+									img(src="./img/gallery_01_04.png", alt="")
+								.col.col-3
+									img(src="./img/gallery_01_03.png", alt="", class="gallery__img")
+									img(src="./img/gallery_01_05.png", alt="")
+						.slide
+							.row
+								.col.col-6: img(src="./img/gallery_02_01.png", alt="", class="gallery__slide")
+								.col.col-3
+									img(src="./img/gallery_02_02.png", alt="", class="gallery__img")
+									img(src="./img/gallery_02_04.png", alt="")
+								.col.col-3
+									img(src="./img/gallery_02_03.png", alt="", class="gallery__img")
+									img(src="./img/gallery_02_05.png", alt="")
+						.slide
+							.row
+								.col.col-6: img(src="./img/gallery_03_01.png", alt="", class="gallery__slide")
+								.col.col-3
+									img(src="./img/gallery_03_02.png", alt="", class="gallery__img")
+									img(src="./img/gallery_03_04.png", alt="")
+								.col.col-3
+									img(src="./img/gallery_03_03.png", alt="", class="gallery__img")
+									img(src="./img/gallery_03_05.png", alt="")
+						.slide
+							.row
+								.col.col-6: img(src="./img/gallery_04_01.png", alt="", class="gallery__slide")
+								.col.col-3
+									img(src="./img/gallery_04_02.png", alt="", class="gallery__img")
+									img(src="./img/gallery_04_04.png", alt="")
+								.col.col-3
+									img(src="./img/gallery_04_03.png", alt="", class="gallery__img")
+									img(src="./img/gallery_04_05.png", alt="")
+		.review
+			.container #[a(name="top4")]
+				.review__header: p Отзывы
+				.review__main
+					.row
+						.col.col-2: img(src="./img/quotation_left.png", alt="", class="quote__img")
+						.col.col-8
+							.slider
+								.slide
+									.row
+										.col.col-3: img(src="./img/review_01.png", alt="", class="review__img")
+										.col.col-9: p Заказывали торт на день рождения ребенку по собственному эскизу с персонажами любимых героев. Он был великолепен! Спасибо! <br><br>Светлана, Киев
+								.slide
+									.row
+										.col.col-3: img(src="./img/review_02.png", alt="", class="review__img")
+										.col.col-9: p Спасибо за красивый торт "Белоснежный зайка" с вкуснющей трехслойной начинкой. Наша дочка была в восторге. <br><br>Марина, Харьков
+								.slide
+									.row
+										.col.col-3: img(src="./img/review_03.png", alt="", class="review__img")
+										.col.col-9: p Заказывали торт на свадьбу. Он превзошел все ожидания! Все гости были в восторге. Будем заказывать только у вас) <br><br>Ирина, Николаев
+								.slide
+									.row
+										.col.col-3: img(src="./img/review_04.png", alt="", class="review__img")
+										.col.col-9: p Огромное спасибо за тортики. Это не только красота внешняя, но и вкуснятина неописуемая! Теперь мы ваши постоянные клиенты. Спасибо!!! <br><br>Елена, Николаев
+						.col.col-2: img(src="./img/quotation_right.png", alt="", class="quote__img")
+		.order #[a(name="top6")]
+			.container
+				.col.col-7.offset-5.order--form
+					p.order__header Закажите свой идеальный десерт
+					p.order__text Оставьте свои контактные данные и мы перезвоним вам в ближайшее время, чтобы ответить на все вопросы
+					form(action="#", method="get")
+						label(for="")
+							input(type="text", class="order__name", name="user", placeholder="Ваше имя", required minlength="5" maxlength="20")
+						label(for="")
+							input(type="digit", class="order__tel", name="tel", placeholder="Ваш номер телефона", required pattern="[0-9]{10,18}")
+						button(class="btn__header", name="submit", value="send") Хочу десерт
+				.col.order--320
+					p.order__header Закажите свой идеальный десерт
+					p.order__text Оставьте свои контактные данные и мы перезвоним вам в ближайшее время, чтобы ответить на все вопросы
+					form(action="#", method="get")
+						label(for="")
+							input(type="text", class="order__name", name="user", placeholder="Ваше имя", required minlength="5" maxlength="20")
+						label(for="")
+							input(type="digit", class="order__tel", name="tel", placeholder="Ваш номер телефона", required pattern="[0-9]{10,18}")
+						button(class="btn__header", name="submit", value="send") Хочу десерт
+		footer.footer
+			.container #[a(name="top5")]
+				.row.row--back
+					.col.col-2: a(href="javascript:void(0)", class="footer__logo--main"): img(src="./img/logo_sweet_cake.png", alt="", class="logo__cake")
+					.col.col-3 
+						.footer__contacts: <br> График работы: <br>Вт-Вс: 9:00 - 18:00 <br>Пн - выходной
+					.col.col-4
+						.footer__contacts
+							<br>#[img(src="./img/icon_phone.png", alt="", class="contacts__img")]
+								a(href="tel:+38093471537") +38093471537
+							<br>#[span.contacts__phone]
+								a(href="tel:+38050371547") +38050371547
+							<br>#[img(src="./img/icon_mail.png", alt="", class="contacts__img")]
+								a(href="mailto:Sweetcake@gmail.com") Sweetcake@gmail.com
+					.col.col-3
+						.social__cards
+							.row
+								.col.col-4.offset-1
+									.cards
+										.cards__front: a(href="javascript:void(0)"): img(src="./img/icon_instagram.png", alt="", class="instagram")
+										.cards__back: a(href="javascript:void(0)"): img(src="./img/icon_ig_hover.png", alt="", class="instagram")
+								.col.col-3
+									.cards
+										.cards__front: a(href="javascript:void(0)"): img(src="./img/icon_facebook.png", alt="")
+										.cards__back: a(href="javascript:void(0)"): img(src="./img/icon_fb_hover.png", alt="")
+								.col.col-4
+									.cards
+										.cards__front: a(href="javascript:void(0)"): img(src="./img/icon_twitter.png", alt="")
+										.cards__back: a(href="javascript:void(0)"): img(src="./img/icon_twitter_hover.png", alt="")
+				.copyright
+					p Sweet Cake дизайн 2018. Все права защищены
+		script(type="text/javascript", src="https://code.jquery.com/jquery-3.3.1.min.js")
+		script(type="text/javascript", src="./plugins/slick/slick.min.js")
+		script(src="./js/menu.js")
+		script(src="./js/slickslider.js")
+		script(src="./js/topBtn.js")
+		script(src="./js/filter.js")

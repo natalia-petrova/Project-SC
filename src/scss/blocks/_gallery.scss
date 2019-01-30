@@ -1,0 +1,26 @@
+.gallery {
+    height: 885px;
+    background-image: url(../img/assorti_back_02.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    &__header {
+        text-align: center;
+        color: #303030;
+        font-family: 'Pacifico';
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 29px;
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+    &__main {
+        flex-direction: row;
+        justify-content: space-between;
+        & img {
+            max-width: 100%;
+        }
+    }
+    &__img {
+        padding-bottom: 20px;
+    }
+}

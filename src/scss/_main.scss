@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700&amp;subset=cyrillic');
+
+@import './blocks/blocks.scss';
+
+* {
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #e67b94;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+    &:hover {
+        background-color: #cfe1e3;
+        color: #e67b94;
+        box-shadow: 0 5px 14.3px 0.8px rgba(219, 116, 138, 0.35);
+    }
+}
+.slide {
+    outline: none;
+}
+.slick-dots li {
+    margin: 0px 10px;
+    width: auto;
+    height: auto;
+    padding-top: 10px;
+}
+.slick-dots li button {
+    width: 15px;
+    height: 15px;
+    background-color: #faeaee;;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+    outline: none;
+}
+.slick-dots li img:nth-child(1) {
+    display: block;
+}
+.slick-dots li img:nth-child(2) {
+    display: none;
+}
+.slick-dots li.slick-active img:nth-child(1) {
+    display: none;
+}
+.slick-dots li.slick-active img:nth-child(2) {
+    display: block;
+}
+.slick-dots li button:before {
+    display: none;
+}
+.gallery__main .slick-dots li {
+    position: relative; top: 30px;
+}
+.nav__list #myTopnav {
+    display: none;
+}
+ @media screen and (max-width:1024px) {
+    .header, .about, .portfolio, .work, .gallery, .review, .order, .footer {
+        height: auto;
+    }
+    .about__header, .portfolio__header, .work__header, .gallery__header, .review__header, .order__header {
+        font-size: 3em;
+        padding-top: 5%;
+    }
+    .row--about, .portfolio__gallery, .work__main, .gallery__main, .review__main, .order--form, .order--320 {
+        padding-bottom: 5%;
+    }
+    /*.img {
+        max-width: 100%;
+        height: auto;
+    }*/
+    .nav__link {
+        font-size: 1.2em;
+    }
+    .header__text {
+        padding-bottom: 5%;
+    }
+    .work__img {
+        max-width: 90%;
+    }
+    .gallery__main img {
+        max-width: 100%;
+    }
+    .review__main img {
+        max-width: 100%;
+    }
+    .order__name, .order__tel {
+        max-width: 100%;
+        height: 70px;
+    }
+    .row--back {
+        padding-top: 5%;
+    }
+    .footer__contacts, .social__cards {
+        font-size: 1.3em;
+    }
+    .copyright {
+        padding-bottom: 1em;
+    }
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    .btn__header {
+        width: auto;
+        height: auto;
+        font-size: 1.5em;
+        padding: 3% 7%;
+    }
+    .about__header, .portfolio__header, .work__header, .gallery__header, .review__header, .order__header {
+        font-size: 2em;
+        padding: 25px 0px 0px 0px;
+    }
+    .portfolio__text, .type__info {
+        font-size: 0.7em;
+        line-height: 20px;
+    }
+    .row--about, .work__main, .review__main, .order__text {
+        font-size: 1.3em;
+    }
+    .portfolio__overlay {
+        max-width: 100%;
+    }
+    .work__bald {
+        font-size: 0.8em;
+    }
+    .footer__contacts, .social__cards {
+        font-size: 1em;
+    }
+    .contacts__img img {
+        display: none;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .row--about, .work__main, .review__main, .order__text {
+        font-size: 1em;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-items: center;
+    }
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .about, .portfolio, .work {
+        text-align: center;
+    }
+    .portfolio__text, .type__info {
+        font-size: 0.8em;
+        line-height: 20px;
+    }
+    .work__bald, .work__stage {
+        font-size: 1em;
+        line-height: 20px;
+        text-align: center;
+    }
+    .gallery__main .gallery__slide {
+        display: none;
+    }
+    .gallery__main img {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .review__main {
+        font-size: 0.8em;
+        line-height: 20px;
+    }
+    .review__img {
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    .quote__img {
+        display: none;
+    }
+    .order--form {
+        display: none;
+    }
+    .order--320 {
+        display: block;
+        padding-bottom: 20px;
+    }
+    .footer {
+        text-align: center;
+    }
+    .row--back {
+        padding-top: 15px;
+    }
+    .footer__contacts {
+        font-size: 1em;
+        line-height: 22px;
+    }
+    .contacts__phone {
+        padding-left: 0;
+    }
+    .social__cards {
+        padding: 0;
+    }
+    .cards {
+        padding-bottom: 15px;
+    }
+    .instagram {
+        padding-right: 10%;
+        padding-top: 5%;
+    }
+    .copyright {
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+    h3 {
+        font-size: 0.8em;
+    }
+    .btn__header {
+        max-width: 100%;
+        height: auto;
+        font-size: 1.2em;
+        padding: 3% 7%;
+    }
+    .gallery__main img {
+        padding: 2px 2px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header__headline {
+        padding-top: 5px;
+    }
+    h1 {
+        font-size: 2.5em;
+        line-height: 20px;
+        padding-top: 50px;
+    }
+    h2 {
+        font-size: 1.5em;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+    h3 {
+        font-size: 0.8em;
+        line-height: 20px;
+        margin-right: 40px;
+    }
+    .header__logo--main {
+        width: 70%;
+    }
+    .row--about {
+        font-size: 0.8em;
+        line-height: 20px;
+        text-align: center;
+    }
+    .about__header, .portfolio__header, .work__header, .gallery__header, .review__header, .order__header {
+        font-size: 1.5em;
+        padding: 25px 0px 0px 0px;
+    }
+    .portfolio__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 16.875em;
+        height: 3em;
+    }
+    .order__text {
+        font-size: 0.8em;
+    }
+    .order__name, .order__tel {
+        font-size: 0.8em;
+        line-height: 20px;
+    }
+ }
+ @media screen and (max-width: 700px) {
+    .header .nav__list, .nav__img {
+        display: none;
+    }
+    .nav__link {
+        font-size: 1em;
+        padding: 8px 5px;
+        background-color:rgba(207, 225, 227, 0.6);
+    }
+    .nav__link:hover {
+        background-color: #fbf8fa;
+    }
+    .nav__link:after {
+        display: none;
+    }
+    .header__nav {
+        padding: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .header__headline {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__headline a.menu__icon {
+        display: block;
+    }
+    .nav__list.responsive {
+        position: relative;
+    }
+    .nav__list.responsive a.menu__icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav__list.responsive a {
+        display: block;
+    }
+    .nav__list.responsive {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .nav__link:hover .menu__icon {
+        position: absolute;
+        z-index: 1;
+    }
+    .menu__icon {
+        font-size: 2em;
+    }
+    .menu__icon:hover {
+        color: #db748a;
+    }
+ }

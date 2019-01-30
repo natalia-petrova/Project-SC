@@ -1,0 +1,48 @@
+.order {
+    height: 615px;
+    background-image: url(../img/order_back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__header {
+        color: #303030;
+        font-family: 'Pacifico';
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 29px;
+        padding-top: 110px;
+        margin-top: 0;
+    }
+    &__text {
+        color: #474747;
+        font-family: 'Raleway';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        margin: 0;
+    }
+    &__name, &__tel {
+        width: 645px;
+        height: 70px;
+        border: none;
+        background-color: #fbf8fa;
+        box-shadow: 0 5px 14.3px 0.8px rgba(71, 71, 71, 0.15);
+        color: #474747;
+        font-family: 'Raleway';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-left: 20px;
+        margin: 10px 0px;
+    }
+    &__name:focus, &__tel:focus {
+        outline-color: #db748a; 
+        opacity: 0.6;
+    }
+}
+.order__tel {
+    margin-bottom: 20px;
+}
+.order--320 {
+    display: none;
+}

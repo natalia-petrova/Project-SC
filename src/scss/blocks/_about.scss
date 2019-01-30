@@ -1,0 +1,27 @@
+.about {
+    min-height: 462px;
+    background-color: #faeaee;
+    &__header {
+        text-align: center;
+        color: #1c1c1c;
+        font-family: 'Pacifico';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 29px;
+        padding-top: 58px;
+        padding-left: 100px;
+    }
+}
+.row--about {
+    color: #474747;
+	font-family: 'Raleway';
+	font-size: 24px;
+	font-weight: 400;
+    line-height: 36px;
+}
+.icon--about {
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}

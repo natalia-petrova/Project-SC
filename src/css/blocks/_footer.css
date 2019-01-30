@@ -1,0 +1,56 @@
+.footer {
+  height: 400px;
+  background-color: #b7d9dd; }
+  .footer____contacts {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px; }
+    .footer____contacts a:focus {
+      outline: none; }
+
+.row--back {
+  padding-top: 125px; }
+
+.contacts__img {
+  padding-right: 15px; }
+
+.contacts__phone {
+  padding-left: 45px; }
+
+.social__cards {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 25px 5px;
+  color: white;
+  font-size: 50px; }
+  .social__cards a:focus, .social__cards a:active {
+    outline: none; }
+
+.cards__back {
+  display: none; }
+
+.cards:hover .cards__front {
+  display: none; }
+
+.cards:hover .cards__back {
+  display: block;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.copyright {
+  color: white;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 55px;
+  text-align: center; }
