@@ -631,6 +631,9 @@ template {
   .header__nav {
     padding-top: 55px;
     overflow: hidden; }
+    @media screen and (min-width: 576px) {
+      .header__nav {
+        padding-top: 20px; } }
   .header__logo--main {
     display: block;
     padding: 0;
@@ -848,7 +851,8 @@ h3 {
   .portfolio__image {
     position: relative;
     display: inline-block;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 100%; }
     .portfolio__image img {
       display: block;
       width: 100%;
@@ -877,7 +881,7 @@ h3 {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 270px;
+    width: 100%;
     height: 45px;
     color: #303030;
     font-family: 'Raleway';
@@ -1002,6 +1006,8 @@ h3 {
       max-width: 100%; }
   .gallery__img {
     padding-bottom: 20px; }
+  .gallery .container {
+    overflow: visible; }
 
 .review {
   height: 510px;
@@ -1085,19 +1091,17 @@ h3 {
 .footer {
   height: 400px;
   background-color: #b7d9dd; }
+  .footer____contacts {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px; }
+    .footer____contacts a:focus {
+      outline: none; }
 
 .row--back {
   padding-top: 125px; }
-
-.footer__contacts {
-  color: white;
-  font-family: 'Raleway';
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px; }
-
-.footer__contacts a:focus {
-  outline: none; }
 
 .contacts__img {
   padding-right: 15px; }
@@ -1118,9 +1122,8 @@ h3 {
   padding: 25px 5px;
   color: white;
   font-size: 50px; }
-
-.social__cards a:focus, .social__cards a:active {
-  outline: none; }
+  .social__cards a:focus, .social__cards a:active {
+    outline: none; }
 
 .cards__back {
   display: none; }
@@ -1150,7 +1153,8 @@ h3 {
 
 .container {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 #topBtn {
   display: none;
@@ -1218,8 +1222,10 @@ h3 {
   .about__header, .portfolio__header, .work__header, .gallery__header, .review__header, .order__header {
     font-size: 3em;
     padding-top: 5%; }
-  .row--about, .portfolio__gallery, .work__main, .gallery__main, .review__main, .order--form, .order--320 {
+  .row--about, .portfolio__gallery, .work__main, .review__main, .order--form, .order--320 {
     padding-bottom: 5%; }
+  .gallery__main {
+    padding-bottom: 50px; }
   /*.img {
         max-width: 100%;
         height: auto;
@@ -1227,7 +1233,7 @@ h3 {
   .nav__link {
     font-size: 1.2em; }
   .header__text {
-    padding-bottom: 5%; }
+    padding-bottom: 50px; }
   .work__img {
     max-width: 90%; }
   .gallery__main img {
@@ -1419,12 +1425,14 @@ h3 {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .header__headline a.menu__icon {
-    display: block; }
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 20px; }
   .nav__list.responsive {
     position: relative; }
   .nav__list.responsive a.menu__icon {
     position: absolute;
-    right: 0;
     top: 0; }
   .nav__list.responsive a {
     display: block; }

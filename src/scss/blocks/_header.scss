@@ -12,6 +12,9 @@
     &__nav {
         padding-top: 55px;
         overflow: hidden;
+        @include small {
+            padding-top: 20px;
+        }
     }
     &__logo--main {
         display: block;

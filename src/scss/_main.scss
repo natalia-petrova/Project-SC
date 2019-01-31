@@ -10,6 +10,7 @@
 .container {
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 #topBtn {
     display: none;
@@ -78,8 +79,11 @@
         font-size: 3em;
         padding-top: 5%;
     }
-    .row--about, .portfolio__gallery, .work__main, .gallery__main, .review__main, .order--form, .order--320 {
+    .row--about, .portfolio__gallery, .work__main, .review__main, .order--form, .order--320 {
         padding-bottom: 5%;
+    }
+    .gallery__main {
+        padding-bottom: 50px;
     }
     /*.img {
         max-width: 100%;
@@ -89,7 +93,7 @@
         font-size: 1.2em;
     }
     .header__text {
-        padding-bottom: 5%;
+        padding-bottom: 50px;
     }
     .work__img {
         max-width: 90%;
@@ -330,13 +334,15 @@
     }
     .header__headline a.menu__icon {
         display: block;
+        position: absolute;
+        z-index: 10;
+        right: 20px;
     }
     .nav__list.responsive {
         position: relative;
     }
     .nav__list.responsive a.menu__icon {
         position: absolute;
-        right: 0;
         top: 0;
     }
     .nav__list.responsive a {
