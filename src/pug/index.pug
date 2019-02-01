@@ -49,13 +49,13 @@ html(lang="en")
 				.about__header: p Почему нас выбирают
 				.row.row--about
 					.col.col-4
-						img(src="./img/icon_02_01.png", alt="", class="icon--about")
+						img(src="./img/icon_02_01.png", alt="", class="animated zoomIn delay-2s")
 						p Мы используем только свежие натуральные ингредиенты
 					.col.col-4
-						img(src="./img/icon_02_02.png", alt="", class="icon--about")
+						img(src="./img/icon_02_02.png", alt="", class="animated zoomIn delay-3s")
 						p Не храним готовый продукт больше суток
 					.col.col-4
-						img(src="./img/icon_02_03.png", alt="", class="icon--about")
+						img(src="./img/icon_02_03.png", alt="", class="animated zoomIn delay-4s")
 						p Готовим эксклюзивные десерты по вашим пожеланиям
 		.portfolio
 			.container #[a(name="top2")]
@@ -226,23 +226,23 @@ html(lang="en")
 					.row
 						.col.col-3
 							.work__numbers
-								img(src="./img/number_01.png", alt="")
-								p.work__bald Оформление заказа
+								img(src="./img/number_01.png", alt="", class="animated flip delay-1s")
+								p.work__bald(class="animated slideInUp delay-1s") Оформление заказа
 								p.work__stage Принимаем ваш заказ и перезваниваем для уточнения всех деталей.
 						.col.col-3
 							.work__numbers
-								img(src="./img/number_02.png", alt="")
-								p.work__bald Осуществление идеи
+								img(src="./img/number_02.png", alt="", class="animated flip delay-2s")
+								p.work__bald(class="animated slideInUp delay-2s") Осуществление идеи
 								p.work__stage Приступаем к приготовлению выбранного вами торта, учитывая все пожелания.
 						.col.col-3
 							.work__numbers
-								img(src="./img/number_03.png", alt="")
-								p.work__bald Подготовка отправки
+								img(src="./img/number_03.png", alt="", class="animated flip delay-3s")
+								p.work__bald(class="animated slideInUp delay-3s") Подготовка отправки
 								p.work__stage Упаковываем готовый дессерт в коробку и готовим заказ к отправке получателю.
 						.col.col-3
 							.work__numbers
-								img(src="./img/number_04.png", alt="")
-								p.work__bald Получение десерта
+								img(src="./img/number_04.png", alt="", class="animated flip delay-4s")
+								p.work__bald(class="animated slideInUp delay-4s") Получение десерта
 								p.work__stage Заказ готов ко встрече с получателем и будет доставлен в указанное время.
 		.gallery
 			.container #[a(name="top3")]
@@ -367,3 +367,4 @@ html(lang="en")
 		script(src="./js/slickslider.js")
 		script(src="./js/topBtn.js")
 		script(src="./js/filter.js")
+		script(src="./js/animate.js")

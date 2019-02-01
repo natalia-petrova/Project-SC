@@ -1,0 +1,1 @@
+{"version":3,"sources":["..\\..\\src\\scss\\js\\animate.js"],"names":["myFunction","document","getElementByClass","innerHTML","addEventListener"],"mappings":"AAEA,SAAAA,aACAC,SAAAC,kBAAA,gBAAAC,UAAA,uBAHAF,SAAAC,kBAAA,gBAAAE,iBAAA,SAAAJ"}

@@ -1,0 +1,2 @@
+function myFunction(){document.getElementByClass("gallery__img").innerHTML="You scrolled in div."}document.getElementByClass("gallery__img").addEventListener("scroll",myFunction);
+//# sourceMappingURL=animate-dist.js.map

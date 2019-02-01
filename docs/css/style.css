@@ -805,14 +805,6 @@ h3 {
   font-weight: 400;
   line-height: 36px; }
 
-.icon--about {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn; }
-
 .portfolio {
   height: 1290px;
   background-image: url(../img/assorti_back_01.png);
@@ -872,7 +864,7 @@ h3 {
     left: 0;
     right: 0;
     bottom: 0;
-    text-align: left;
+    text-align: center;
     opacity: 0;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -1091,13 +1083,13 @@ h3 {
 .footer {
   height: 400px;
   background-color: #b7d9dd; }
-  .footer____contacts {
+  .footer__contacts {
     color: white;
     font-family: 'Raleway';
     font-size: 24px;
     font-weight: 700;
     line-height: 36px; }
-    .footer____contacts a:focus {
+    .footer__contacts a:focus {
       outline: none; }
 
 .row--back {
