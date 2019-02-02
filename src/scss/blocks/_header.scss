@@ -104,6 +104,15 @@ h1 {
 	font-weight: 400;
     line-height: 72px;
     padding-top: 190px;
+    @include large {
+        font-size: 5em;
+    }
+    @include medium {
+        font-size: 3.9em;
+    }
+    @include xsmall {
+        font-size: 3.3em;
+    }
 }
 h2 {
 	color: #666;
@@ -112,6 +121,15 @@ h2 {
 	font-weight: 400;
 	line-height: 72px;
     padding-top: 10px;
+    @include large {
+        font-size: 3.3em;
+    }
+    @include medium {
+        font-size: 2.5em;
+    }
+    @include xsmall {
+        font-size: 2.1em;
+    }
 }
 h3 {
 	color: #474747;
@@ -121,6 +139,15 @@ h3 {
     line-height: 36px;
     padding-top: 20px;
     padding-bottom: 35px;
+    @include large {
+        font-size: 1.3em;
+    }
+    @include medium {
+        font-size: 0.9em;
+    }
+    @include xsmall {
+        font-size: 0.7em;
+    }
 }
 .btn__header {
     border: none;
@@ -142,6 +169,17 @@ h3 {
     animation-duration: 5s;
     -webkit-animation-name: bounceIn;
     animation-name: bounceIn;
+    @include medium {
+        width: auto;
+        height: auto;
+        font-size: 1.5em;
+        padding: 3% 7%;
+    }
+    @include xsmall {
+        max-width: 100%;
+        height: auto;
+        font-size: 1.2em;
+    }
     &:hover {
         background-color: #e67b94;
         box-shadow: 0 5px 14.3px 0.8px rgba(219, 116, 138, 0.35);

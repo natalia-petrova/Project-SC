@@ -34,6 +34,13 @@
         line-height: 22px;
         padding-left: 20px;
         margin: 10px 0px;
+        @include extra {
+            max-width: 100%;
+            height: 70px;
+        }
+        @include small {
+            font-size: 0.9em;
+        }
     }
     &__name:focus, &__tel:focus {
         outline-color: #db748a; 

@@ -22,6 +22,14 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
+        @include medium {
+            font-size: 0.8em;
+        }
+        @include small {
+            font-size: 1.2em;
+            line-height: 20px;
+            text-align: center;
+        }
     }
     &__stage {
         color: #474747;
@@ -29,5 +37,14 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
+        @include medium {
+            font-size: 0.75em;
+            line-height: 24px;
+        }
+        @include small {
+            font-size: 1em;
+            line-height: 20px;
+            text-align: center;
+        }
     }
 }
